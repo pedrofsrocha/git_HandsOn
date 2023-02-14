@@ -18,7 +18,8 @@ args.seq = args.seq.upper()
 if re.search('^[ACGTU]+$', args.seq):
     if re.search('T', args.seq) and not ('U', args.seq):
         print ('The sequence is DNA')
-    elif re.search('U', args.seq) and not ('T', args.seq):
+    elif re.search('U', args.seq) and not ('T', args.seq): # addding the  option 
+of sequences that contain T and U.
         print ('The sequence is RNA')
     else:
         print ('The sequence is not DNA or RNA')
